@@ -1,0 +1,17 @@
+.looks-like-input {
+    border: 1px solid black;
+    width: 20em;
+    max-width: calc(100vw - 90px);
+    padding: 0.4em;
+  }
+  fieldset{
+    background-color: rgb(213, 255, 255);
+    width: 15%;
+  }
+  legend{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: 1px solid rgb(28, 41, 226);
+    background-color: rgb(255, 183, 249);
+  }
+

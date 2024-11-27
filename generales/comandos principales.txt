@@ -1,0 +1,14 @@
+se puede centrar desde margin a la mitad haciendo = margin: auto (y aca el valor) auto 50px seria centrado 
+a:visited{} = para links ya visitados
+a:link{}= para links de a's
+a:activate{}= solo cuando clickeo (medio inutil) 
+
+
+para volver varios niveles atras en rutas se puede hacer ../../
+
+rutas alternativas= indica solo el nombre del archivo (url)
+
+a href="./contenido.html"
+
+rutas absolutas: hhtp
+a href="http://www.google.com" o solo "https://google.com"

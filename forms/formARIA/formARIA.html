@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="name"> Ingrese su nombre</label> <br>
+        <input type="text" name="name" id="name"> <br>
+        <label for="surname"> Ingrese su apellido</label> <br>
+        <input type="text" name="surname" id="surname"><br>
+        <button type="submit"> Enviar</button>
+        <br>
+
+
+    </form>
+    <br>
+    <br>
+    <main>
+        <div class="wrapper">
+            <form>
+                <div>
+                    <label for="name">Name (required)</label> <br>
+                    <!-- aria-describedby: se usa para gente que usa asistencia virtual, va a describir algun mensaje que se use como id-->
+                    <input required minlength="8" type="text" id="name" name="name" aria-describedby="name-validation">
+                    <!-- aca usamos el id para describedby y aria-live=assertive da el mensaje o anuncio en tiempo real,urgente -->
+                    <div id="name-validation" aria-live="assertive" class="validation-message">Please use at least eight
+                        characters.</div>
+                </div>
+                <button>Save</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

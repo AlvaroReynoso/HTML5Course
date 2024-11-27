@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./formularioStyle.css">
+</head>
+
+<body>
+    <h1>Formulario General</h1>
+    <!--(default:GET) GET es para recibir informacion del servidor por medio HTTP, tambien existe POST que es para enviar informacion al servidor.. Con metodo POST tambien no se enviara la info a la url, con GET si-->
+    <!-- El action del Form es la url a la que se va a enviar cuando haga submit del servidor, se envia toda la info -->
+    <form action="miServidor" method="GET" autocomplete="on"> <!--novalidate: Esto es para no validar nada-->
+        <!-- Autocomplete= OFF o ON ,para sugerencias de mails,nombre,etc -->
+        <fieldset>
+            <legend>Formulario general sobre ti</legend>
+
+            <!-- Metodos principales-->
+            <label for="nombre" name="nombre">Ingrese su nombre</label>
+            <br>
+
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" aria-describedby="error-length"
+                required><br>
+            <small id="error-length">Minimum of 6 letters</small><br>
+            <label for="email" name="email">Ingrese su email</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Escribe tu email" aria-describedby="error-length"
+                required><br>
+
+            <label for="edad">Ingrese su edad</label><br>
+            <input type="number" name="edad" id="edad" placeholder="ingrese edad" step="any"><br>
+            <!--Step="Any"=Es para pasar numeros con valores decimales-->
+            <label for="password" name="password">Ingrese su password</label>
+            <br>
+            <input type="password" id="password" name="password" aria-describedby=" error-length" required><br>
+            <label for="genero"> Elija su genero</label><br>
+            <!-- El value en radio y checkbox van si o si para saber que info se envia al servidor -->
+            <input type="radio" id="genero" name="genero" value="Hombre">Hombre<br>
+            <input type="radio" id="genero" name="genero" value="Mujer">Mujer<br>
+            <label for="hobbies"> Elija hobbies</label> <br>
+            <input type="checkbox" id="hobbies" name="hobbies" value="basquet"> basquet
+            <input type="checkbox" id="hobbies" name="hobbies" value="natacion"> natacion
+            <input type="checkbox" id="hobbies" name="hobbies" value="tenis"> tenis
+            <input type="checkbox" id="hobbies" name="hobbies" value="futbol"> futbol
+            <br>
+            <label for="autos">Marca de auto favorita</label><br>
+            <!-- Multiple es para seleccionar varios en un select -->
+            <select multiple="true" name="autos" id="autos">
+                <option value="volvo">Volvo</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Peugeot">Peugeot</option>
+                <option value="BMW" selected="true">BMW</option>
+            </select><br>
+            <label for="Comentarios">Comentarios</label><br>
+            <textarea name="Comentarios" id="Comentarios" rows="2" cols="30"></textarea><br>
+
+            <button type="submit">Enviar</button>
+            <button type="submit" formnovalidate="formnovalidate" value="Enviar sin validar">Enviar Sin
+                validar</button>
+            <!-- Esto de formnovalidate es para enviar un formulario sin validar -->
+
+            <!-- Metodos secundarios -->
+            <p>Metodos secundarios</p>
+            <input type="reset" value="Restablecer"><br>
+            <!-- readonly:se usa mucho de parte del servidor,es para mostrar valores sin ser modificados -->
+            <!-- Con disable tambien deshabilito el input,ademas ,el campo no se envia al server
+             Cuidado con el disable porque NO se envia al server ,readonly si -->
+            <label for="IDPersona">ID Persona:</label>
+            <input type="text" name="IDPersona" id="IDPersona" readonly="true" value="100">
+            <input type="hidden" name="sistema" id="sistema" value="SisAdmPersona">
+
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>

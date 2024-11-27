@@ -1,0 +1,37 @@
+se puede centrar desde margin a la mitad haciendo = margin: auto (y aca el valor) auto 50px seria centrado 
+a:visited{} = para links ya visitados
+a:link{}= para links de a's
+a:activate{}= solo cuando clickeo (medio inutil) 
+
+para volver varios niveles atras en rutas se puede hacer ../../
+
+rutas alternativas= indica solo el nombre del archivo (url)
+
+a href="./contenido.html"
+
+rutas absolutas: hhtp o sitios web
+a href="http://www.google.com" o solo "https://google.com"
+
+
+<TABLE>
+dentro de table se puede poner <caption> Lista de numeros </caption> => es un TITULO de la TABLA
+tr = row
+td= data para rellenar
+th= header
+colspan= une columnas ej: colspan="2"=>une 2 columnas
+rowspan= une filas
+
+<LIST> ol ul internamente li
+li {float: left}=> es para posicionar los elementos li de izquierda a derecha
+<LISTAS DE DESCRIPCION> (no tan util)
+dl(description list): internamente dt(description term):subtitulo dd(description data): contenido del dt
+CSS:
+OVERFLOW:HIDDEN: IMPORTANTE EN LISTAS para q los colores no se dañen o desaparezcan ,es para que no se desborde, es para mostrar independiente los bloques y que demas contenidos
+se muestren debajo e independientes
+display: block=> Me permite manejar como bloques ,ej: en listas yo agrego bg en hover y el color me va a marcar todo el bloque 
+
+para trabajar agregando colores a renglones pares o impares se usa===>  tr:nth-child(even o odd) even=par odd=impar SIRVE PARA AGREGAR COLORES INTERNAMENTE EN UNA LISTA (PRECISION)
+{border-collapse= collapse}= Se usa mucho para sacar bordes de las tablas
+{border-spacing:5px}= Se usa para espaciar un border pero no se usa mucho
+ table,th,td{}= selecciono basicamente todo, table ,th y td (solo separo por comas a cada 1)
+los puedo separar igual ej: table,th {} td{
