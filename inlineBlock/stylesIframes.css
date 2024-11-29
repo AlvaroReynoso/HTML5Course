@@ -1,0 +1,36 @@
+.marco{
+    border: 2px solid rgb(197, 44, 44);
+}
+
+.titulo{
+    text-align: center;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+div{
+    display: flex;
+    font-size: large;
+    justify-content: center;
+}
+
+.boton{
+    color: aliceblue;
+    background-color: rgb(41, 126, 141);
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px 0px rgb(12,14,12,0.4);
+}
+.boton:hover{
+    background-color:rgb(35, 150, 170);
+}
+
+.boton:active{
+    background-color:rgb(5, 65, 57);
+}
+.abottom{
+    margin-top: 20px;
+}
