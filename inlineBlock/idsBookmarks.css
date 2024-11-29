@@ -1,0 +1,22 @@
+h1{
+    color: blue;
+    text-align: center;   
+    /* TEXT ALIGN ES PARA CENTRAR EN EL MEDIO SIEMPRE */
+}
+
+h2{
+    color: blueviolet;
+}
+
+.divsPrincipales{
+    border: 10px solid #560bAD;
+    background-color: #f1faee;
+    text-align: center;
+    padding: 200px;
+}
+
+#elementoPrincipalSpan{
+    color: brown;
+    background-color: rgb(64, 196, 196);
+
+}

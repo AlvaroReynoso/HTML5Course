@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesIframes.css">
+</head>
+
+<body>
+    <h1 class="titulo">Uso del Iframe</h1>
+    <div> <iframe class="marco" src="./textoIframe.html" name="marco1" width="50%" height="300px"></iframe>
+    </div>
+    <br>
+    <div> <a href="https://www.mercadolibre.com.ar" target="marco1" class="boton">Cargar pagina dentro del Iframe </a>
+    </div>
+    <br>
+    <!-- Con name y target con el mismo nombre,al clickear el a, va a mostrar la pagina dentro del iframe -->
+    <div><iframe src="./textoIframe.html" class="marco" frameborder="0" width="50%" name="hola">Hola</iframe></div>
+    <div class="abottom"><a href="https://www.mercadolibre.com.ar" class="boton" target="hola">Aprete aqui para cargar
+            mercadolibre</a>
+    </div>
+
+
+</body>
+
+</html>

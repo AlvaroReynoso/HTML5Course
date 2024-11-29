@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos inline y Block</title>
+    <link rel="stylesheet" href="./idsBookmarks.css">
+</head>
+
+<body>
+
+
+    <a href="#h1Principal">Ir al h1</a>
+    <a href="#cajaPrincipal">Ir a la caja principal</a>
+    <!-- esto se llama BOOKMARKS -->
+    <!-- esto se hace para volver a algun elemento id cuando scrolleas abajo y queres volver arriba a algun id especifico -->
+
+    <!-- hay que tener ojo con las clases y los ids, los ids se deben aplicar a 1 solo elemento y no a varios ,para eso estan las clases -->
+    <!-- LOS DIVS SE DEPOSITAN ABAJO ,SON CAJAS (BLOQUES) QUE SE DEPOSITAN UNO DEBAJO DEL OTRO -->
+    <h1 id="h1Principal">Elementos del div</h1>
+    <div class="divsPrincipales">
+        <h2>Dentro del div</h2>
+        <p>dentro del div tambien</p>
+    </div>
+    <p>Hola soy alvaro
+    <div id="cajaPrincipal" class="divsPrincipales">esto es un div dentro del parrafo de Hola soy Alvaro solo que se
+        aplica los estilos al
+        div no al parrafo</div>
+    <p>esto esta fuera de los divs</p>
+    </p>
+
+    <br>
+    <!-- SPAN SE DEPOSITAN AL LADO ,SON CAJAS QUE SE DEPOSITAN UNO AL LADO DEL OTRO -->
+    <h1 id="elementoPrincipalSpan">Elementos del Span</h1>
+    <!-- el id me permite en css cambiar este titulo solo sin afectar todos los h1 -->
+    <p>Texto donde vamos a <span style="color: brown;">poner</span> a prueba cosas en HTML</p>
+    <br>
+    <a href="#h1Principal">Volver al h1</a>
+    <a href="#cajaPrincipal">Volver a la caja principal</a>
+    <!-- esto se llama BOOKMARKS -->
+    <!-- esto se hace para volver a algun elemento id cuando scrolleas abajo y queres volver arriba a algun id especifico -->
+</body>
+
+</html>
