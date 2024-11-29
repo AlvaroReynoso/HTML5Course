@@ -1,0 +1,54 @@
+table,th{
+    border: 2px solid rgb(60, 84, 221);
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid red;
+    
+}
+
+caption{
+    margin: 1px 5px 25px;
+    font-family:'Trocchi',sans-serif ;
+}
+
+/* edicion de los links */
+a:link{
+    color: chocolate;
+}
+
+/* edicion cuando ya un link fue visitado */
+a:visited{                 
+    color:brown;
+    background-color: chartreuse;
+}
+/* edicion cuando estoy apretando click y no lo suelto */
+a:active{
+    color: seagreen;
+}
+
+
+/* tr:nth-child(even){
+    color:brown
+}              dont apply because the td odd and even are working   */
+
+/* tr:nth-child(odd) me permite entrar a los trows impares y editarle el estilo */
+tr:nth-child(odd){                  
+    color:aquamarine;
+    background-color: violet;
+}
+
+/* td:nth-child(odd) me permite entrar a los tdata impares y editarle el estilo */
+td:nth-child(odd){
+    color:violet;
+    background-color: blanchedalmond;
+}
+/* td:nth-child(even) me permite entrar a los tdata pares y editarle el estilo */
+
+td:nth-child(even){
+    color:yellow;
+    background-color: blue;
+}
+
+
